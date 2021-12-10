@@ -108,7 +108,7 @@ vector<double> VKVK(const int& T,const int& L,const double& mu,const int& r12)
 		pt0[iP0]*pt0[iQ0]+(ptI[iP1]*ptI[iP1]+ptI[iP2]*ptI[iP2]+ptI[iP3]*ptI[iP3])/3-Mp*Mq*r12;
 
 	      //Numerator of the loop integrand in case of 1-local-1-conserved current
-	      const double num_cons = (mu2 + Mp*Mq)*(pcI[iP1]+pcI[iP2]+pcI[iP3])/3.0 + (pt0[iP0]*pt0[iQ0]-p2tI[iP1] + p2tI[iP2] +p2tI[iP3])*pcI[iP1] + (pt0[iP0]*pt0[iQ0]+p2tI[iP1]- p2tI[iP2] +p2tI[iP3])*pcI[iP2] + (pt0[iP0]*pt0[iQ0]+p2tI[iP1] + p2tI[iP2] -p2tI[iP3])*pcI[iP3];
+	      const double num_cons = (mu2 + Mp*Mq)*(pcI[iP1]+pcI[iP2]+pcI[iP3])/3.0 + (pt0[iP0]*pt0[iQ0]-p2tI[iP1] + p2tI[iP2] +p2tI[iP3])*pcI[iP1]/3.0 + (pt0[iP0]*pt0[iQ0]+p2tI[iP1]- p2tI[iP2] +p2tI[iP3])*pcI[iP2]/3.0 + (pt0[iP0]*pt0[iQ0]+p2tI[iP1] + p2tI[iP2] -p2tI[iP3])*pcI[iP3]/3.0;
 	      
 	      
 	      /// First factor of denominator
